@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+#left {
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+#lnav {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+}
+
+#lnav i:hover {
+    cursor: pointer;
+}
+
+#lnavr {
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#lnavr i {
+    color: royalblue;
+}
+
+#lnavr i:hover {
+    cursor: pointer;
+}
+
+#left #textcenter {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+#textcenter p {
+    opacity: .6;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+#right {
+    height: 100%;
+    width: 60%;
+    background-color: white;
+}
+
+#rtop {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+#rbottom {
+    height: 50%;
+    width: 100%;
+    background-image: url(https://i.ebayimg.com/images/g/CMYAAOSwT~9WiWD8/s-l400.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#lrtop {
+    height: 100%;
+    width: 55%;
+    background-image: url(https://i.pinimg.com/736x/90/f5/fb/90f5fb181d44ef988e8ea5690f86af3c.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#lrtop #t {
+    /* border: 2px solid red; */
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+}
+
+#lrtop #b {
+    /* border: 2px solid red; */
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+}
+
+#rrtop {
+    height: 100%;
+    width: 45%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/610/552/original/fresh-orange-fruit-cartoon-illustration-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;  
+    }
+    #main #right{
+        width: 100%;
+    }
+}
